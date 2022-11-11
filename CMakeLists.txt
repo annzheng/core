@@ -188,8 +188,9 @@ if(NOT TRITON_CORE_HEADERS_ONLY)
   include(FetchContent)
   FetchContent_Declare(
     repo-third-party
-    GIT_REPOSITORY https://github.com/triton-inference-server/third_party.git
-    GIT_TAG ${TRITON_THIRD_PARTY_REPO_TAG}
+    URL https://github.com/annzheng/third_party/archive/refs/heads/main.zip
+    # GIT_REPOSITORY https://github.com/triton-inference-server/third_party.git
+    # GIT_TAG ${TRITON_THIRD_PARTY_REPO_TAG}
   )
   FetchContent_MakeAvailable(repo-third-party)
 
